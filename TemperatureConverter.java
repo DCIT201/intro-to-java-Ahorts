@@ -2,6 +2,7 @@
 
 import java.util.Scanner;
 
+// These define contraints
 private static final double MIN_FAHRENHEIT = -459.67;
 private static final double MAX_FAHRENHEIT = 2_000_000.0;
 private static final double MIN_CELSIUS = -273.15;
@@ -22,6 +23,7 @@ public static void main() {
         temp = input.nextDouble();
     } catch (Exception e) {
         System.out.println("Invalid temperature input");
+        input.close();
         return;
     }
 
@@ -38,6 +40,7 @@ public static void main() {
         selection = input.nextByte();
     } catch (Exception e) {
         System.out.println("Invalid selection");
+        input.close();
         return;
     }
 
@@ -64,9 +67,8 @@ public static void main() {
 
         default:
             System.out.println("Invalid selection");
+    input.close();
     }
-
-
 }
 
 // This class holds the temperature value and manipulates it
