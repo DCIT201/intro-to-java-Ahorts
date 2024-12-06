@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-// These define contraints
+// These define constraints
 private static final double MIN_FAHRENHEIT = -459.67;
 private static final double MAX_FAHRENHEIT = 2_000_000.0;
 private static final double MIN_CELSIUS = -273.15;
